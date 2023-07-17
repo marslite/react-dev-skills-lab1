@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import ToDoList from './ToDoList'
+import SkillList from './SkillList'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,8 +10,8 @@ function App() {
   return (
     <>
     <div className="App">
-      <h1>React To-Do</h1>
-      <ToDoList/>
+      <h1>React Dev Skills</h1>
+      <SkillList/>
 
     </div>
     </>
