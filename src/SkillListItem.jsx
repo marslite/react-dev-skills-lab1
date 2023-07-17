@@ -1,7 +1,8 @@
 
-
-export default function SkillListItem(){
+export default function SkillListItem({origin}){
+    console.log(origin, "<-- Origin")
     return(
-        <li>SkillListItem</li>
+        
+        <li> {origin.name + origin.level}</li>
     );
 }
