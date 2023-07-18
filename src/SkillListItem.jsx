@@ -1,6 +1,12 @@
 import "./SkillListItem.css"
+import { useState } from "react";
 
 export default function SkillListItem({origin}){
+
+const [skillObj, setSkill] = useState({
+    
+})
+
     console.log(origin, "<-- Origin")
     return(
         

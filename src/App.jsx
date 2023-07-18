@@ -12,6 +12,10 @@ const skills = [
   { name: "Python", level: 2 },
 ];
 
+
+const [skillObj, setSkills] = useState({skills})
+
+
 function App() {
   const [count, setCount] = useState(0)
 
