@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+import './style.css'
 import SkillList from './SkillList'
 import NewSkillForm from './NewSkillForm'
 
@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-    <div className="App">
+    <div className="App padding-0 teal-text">
       <h1>React Dev Skills</h1>
       <SkillList skills={skills}/>
 

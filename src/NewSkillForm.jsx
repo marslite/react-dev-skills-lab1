@@ -1,7 +1,10 @@
+import "./NewSkillForm"
+
+import "./NewSkillForm.css"
 
 export default function NewSkillForm(){
     return(
-        <form action="submit">
+        <form className="NewSkillForm" action="submit">
             <label id="name"> <b>Skill</b> 
                 <input placeholder="Insert Skill" />
                 </label>

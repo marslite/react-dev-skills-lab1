@@ -2,6 +2,7 @@ import SkillListItem from "./SkillListItem";
 
 
 
+
 export default function SkillList({skills}){
 
     const SkillListItems = skills.map((s)=> <SkillListItem origin = {s}/>)
@@ -9,7 +10,7 @@ export default function SkillList({skills}){
 
 
     return(
-        <ul className="something"> 
+        <ul className="padding-0"> 
         {SkillListItems}
         </ul>
     );

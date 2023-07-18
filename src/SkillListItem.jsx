@@ -1,8 +1,9 @@
+import "./SkillListItem.css"
 
 export default function SkillListItem({origin}){
     console.log(origin, "<-- Origin")
     return(
         
-        <li> {origin.name + origin.level}</li>
+        <li className="SkillListItem"> {origin.name} <span className="level">{origin.level }</span></li>
     );
 }
