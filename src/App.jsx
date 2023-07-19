@@ -13,20 +13,36 @@ const skills = [
 ];
 
 
-const [skillObj, setSkills] = useState({skills})
+
+
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0);
+  const [skillObj, setSkills] = useState(skills)
+  console.log(skillObj, "Check this <--");
+
+
+  function addSkill(addSkillFromTheForm){
+    console.log(addSkillFromTheForm, "Skill that needs to be added")
+
+    setSkills([
+      addSkillFromTheForm,
+      ...skillObj
+    ])
+
+  }
+
+
 
   return (
     <>
     <div className="App padding-0 teal-text">
       <h1>React Dev Skills</h1>
-      <SkillList skills={skills}/>
+      <SkillList skills={skillObj}/>
 
       <hr />
-      <NewSkillForm/>
+      <NewSkillForm addSkill={addSkill}/>
 
     </div>
     </>
